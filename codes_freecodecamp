@@ -1,0 +1,439 @@
+#print
+# print("Hello World!")
+
+#------------------------------------------------------------------------------------------------------
+# print(" ||||  ")
+# print(" ----> ")
+# print(" ||||  ")
+
+#-------------------------------------------------------------------------------------------------------
+#variable
+# name = "Vicky"
+# age = "21"
+# is_male = True
+# print("My name is " + name +" and my age is " + age + " .")
+
+#------------------------------------------------------------------------------------------------------
+#strings
+# sentence = "PyThon free"
+# print(sentence.lower())
+# print(sentence.upper())
+# print(sentence.isupper())
+# print(sentence.upper().isupper())
+# print(len(sentence))
+# print(sentence[1])
+# print(sentence.index("h"))
+# print(sentence.replace("free","not free"))
+
+#------------------------------------------------------------------------------------------------------
+#numbers
+# print(5)
+# num = 3
+# #print(num + " is my favourite number.")
+# print(str(num) + " is my favourite number.") #use this string after number
+# print(abs(num))
+# print(pow(3,2))#number^power
+# print(max(9,5))
+# print(min(4,3,2,1))
+# print(round(3.5))
+
+# from math import *    #different match functions
+# print(floor(3.5))
+# print(ceil(3.5))
+# print(sqrt(9))
+
+#--------------------------------------------------------------------------------------------
+#get input from users
+# name = input("enter your name: ")
+# age = input("enter your age: ")
+# print("Hii "+ name+"!" + " your age is " + age +".")
+
+#------------------------------------------------------------------------------------------
+#Basic calculator - pyhton takes input as a string
+#first convert string into num
+# num1 = input("enter a number: ")
+# num2 = input("enter other number: ")
+# # ans = int(num1)+int(num2)
+# ans = float(num1)+float(num2)  #good
+# print(ans)
+
+#------------------------------------------------------------------------------------------
+#matlibs (hyphen game)
+# color = input("enter color: ")
+# plural_noun = input("enter plural: ")
+# anyone_name = input("enter any: ")
+#
+# print("Roses are " + color)
+# print(plural_noun + " are blue")
+# print("I love " + anyone_name)
+
+#--------------------------------------------------------------------------------------------
+#lists = [] - dealing with large amount of datas
+# friends = ["schools","college","native","company","outer"]
+# any = ["vicky",21,True]
+# print(friends)
+# print(friends[1] +" "+ friends[-1])
+# print(friends[1:])#select after
+# print(friends[0:3])#set range
+# friends[1]="loosu pasanga"   #also update
+# print(friends)
+
+#------------------------------------------------------------------------------------------
+#list functions
+# lucky_numbers = [1,7,5,3,9]
+# friends = ["schools","college","native","company","outer"]
+# friends.insert(1,"all")            #insert - inserting in positon
+# print(friends)
+# friends.remove("all")              #remove - remove the element
+# print(friends)
+# friends.append("nope")             #append - add last
+# print(friends)
+# friends.pop()                      #pop - remove last element
+# print(friends)
+# friends.sort()                     #srt - alphabetic order
+# print(friends)
+# friends.extend(lucky_numbers)      #extend - addition all
+# print(friends)
+# print(friends.index("native"))    #index - find the index value
+# print(friends.count("college"))   #count - count
+# friends.clear()                   #clear - delete all
+# print(friends)
+#
+# lucky_numbers.sort()              #sort - ascending order
+# print(lucky_numbers)
+# lucky_numbers.sort(reverse=True)  #sort = descending order
+# print(lucky_numbers)
+# lucky_numbers.reverse()           #reverse - reversing
+# print(lucky_numbers)
+# numbers = lucky_numbers.copy()    #copy - copying to other
+# print(numbers)
+
+#--------------------------------------------------------------------------------------------
+#tuples = () - it is one of datatype - its not changes or not modified or it is immutable
+# coordinates = (3,5)       #tuples
+# print(coordinates[1])
+# list = [(3,4),(4,5,6),(7,8,0)]
+# print(list[1])
+
+#------------------------------------------------------------------------------------------
+#Functions in python - collection of codes perform their specific task
+#CREATE FUNCTION- lines must be correct intended
+# def say_hi():
+#     print("hello user")
+#     name = input("enter name: ")
+#     print("hello "+ name)      #end of function
+
+# say_hi()
+
+#paramter
+# def say_hi(name,age):
+#     print("Hello "+ name +"-"+str(age))
+# say_hi("vicky",21)#"21"
+
+#---------------------------------------------------------------------------------------------
+#Return statement
+# def cube(num):
+#     return num*num*num
+#
+# result = cube(3)
+# print(result)
+
+#--------------------------------------------------------------------------------------------
+#If statements
+# is_male = True
+# is_tall = False
+# if is_male and is_tall:                     #and ,or
+#     print("you are male or tall")
+# elif is_male and not(is_tall):
+#     print("you are male and short")
+# elif not(is_male) and is_tall:
+#     print("you are female and tall")
+# else:
+#     print("you are female ")
+
+#------------------------------------------------------------------------------------------
+#IF staements and comparisions
+# def max_num(num1, num2, num3):
+#     if num1 >= num2 and num1 >= num3:
+#         return num1
+#     elif num2 >= num1 and num2 >= num3:
+#         return num2
+#     else:
+#         return num3
+#
+# print(max_num(300, 4, 5))
+
+#-------------------------------------------------------------------------------------------------
+#Building better calculator
+#change to number
+# num1 = float(input("enter: "))
+# op = (input("enter operator: "))
+# num2 = float(input("enter: "))
+#
+# if op == "+":
+#     print(num1+num2)
+# elif op == "-":
+#     print(num1-num2)
+# elif op == "*":
+#     print(num1*num2)
+# elif op == "/":
+#     print(num1/num2)
+# else:
+#     print("error")
+
+#-------------------------------------------------------------------------------------------------
+#Dictionaries - special structures allows store information in what called key(unique) : valued pairs
+#month name conversions - jan -> january
+
+# monthconversions = {
+#     "jan" : "january",
+#     "feb" : "february",
+#     "mar" : "march",
+#     "apr" : "april",
+#     "may" : "may",
+#     "jun" : "june",
+#     "jul" : "july",
+#     "aug" : "august",
+#     "sep" : "september",
+#     "oct" : "october",
+#     "nov" : "november",
+#     "dec" : "december",
+# }
+#
+# print(monthconversions["nov"])
+# print(monthconversions.get("dec"))
+# print(monthconversions.get("luv", "not a key"))  #only wrong value is none
+
+#--------------------------------------------------------------------------------------------
+#while loop
+# i=1
+# while i <= 10:
+#     print(i)
+#     i+=1
+
+#-------------------------------------------------------------------------------------------
+#building a guessing game -
+# secret_word = "python"
+# guess = ""
+# guess_count = 0
+# guess_limit = 3
+# out_of_guesses = False    # we have trials
+#
+# while guess != secret_word and not(out_of_guesses):
+#     if guess_count < guess_limit:
+#         guess = input("enter programing language: ")
+#         guess_count += 1
+#     else:
+#         out_of_guesses = True
+#
+# if out_of_guesses:
+#     print("you lose!")
+# else:
+#     print("you win!")
+
+#---------------------------------------------------------------------------------------------
+#for loop
+#for i in range(1,10):
+#   print(i)
+
+# for letter in "vicky":
+#     print(letter)
+
+# names = ["vicky","nakki","dicky"]
+# for i in range(len(names)):
+#     print(names[i])
+
+#-----------------------------------------------------------------------------------------------
+#Exponent function
+# print(2**3)
+
+# def raise_to_power(base_num,pow_num):
+#     result = 1
+#     for i in range(pow_num):
+#         result = result * base_num
+#     return result
+#
+# print(raise_to_power(3, 3))
+
+#---------------------------------------------------------------------------------------------------
+#2D lists & nested fro loops
+# number_grid = [
+#     [1,2,3],
+#     [4,5,6],
+#     [7,8,9],                #2 D
+#     [0]
+# ]
+# print(number_grid[2][1])
+
+
+# number_grid = [
+#     [1,2,3],
+#     [4,5,6],
+#     [7,8,9],                #nested for loop
+#     [0]
+# ]
+# for row in number_grid:
+#     for col in row:
+#         print(col)
+
+#------------------------------------------------------------------------------------------
+#Build a translator
+# vicky python = vowels - $
+
+# def translate(phrase):
+#     translation = ""
+#     for letter in phrase:
+#         if letter in "AEIOUaeiou":
+#             translation = translation + "$"
+#         else:
+#             translation = translation + letter
+#     return translation
+#
+# print(translate(input("enter a phrase : ")))
+
+#------------------------------------------------------------------------------
+#COMMENTS
+'''
+nfjaf
+afkaf                 #multiline comments
+djass
+'''
+
+#----------------------------------------------------------------------------------
+#Try  Except - catching errors
+# try:
+#     number = int(input("enter a number: ")) # alphabets
+#     print(number)
+#     value = 10 / 0
+# except ZeroDivisionError:
+#     print("zero is not possible")
+# except ValueError:
+#     print("invalid input")
+
+#--------------------------------------------------------------------------------------
+#Reading files -read  external files like html,csv,text
+# r - read ,w - write,a - append, r+ = read+write
+#put it in variable ,must close
+# my_file = open("demo.txt", "r")
+# print(my_file.read())   # read - all,readable-check,readline - first line,readlines-all put in array
+# my_file.close()
+
+#--------------------------------------------------------------------------------------
+#writing into files
+#append to a file
+# my_file = open("demo.txt", "a")   #w - wright existing file or create new file
+# #my_file.write("Be happy!!!")
+# my_file.write("\nBe you da")     #new line
+# my_file.close()
+
+#---------------------------------------------------------------------------------------
+#writing or CREATE FILES
+# myfile = open("demo1.html", "w")           #use w to create
+# myfile.write("<p>This is HTML</p>")
+# myfile.close()
+
+#---------------------------------------------------------------------------------------
+#Modules and Pip  - access external file with current working file
+# myfile = open("demo1.py", "w")           #use w to create
+# myfile.write("kjhjg")
+# myfile.close()
+
+#import the file name to access
+# import demo1
+# print(demo1.roll(5))   # access other file
+
+#---------------------------------------------------------------------------------------------
+#list of modules - very useful all are stored in external libraries -> Lib
+#pip -used to install,manage,uninstall pytghon modules
+#open comment prompt
+# pip --Version
+# pip install modulename like python-docx etc
+#in site-packages folder you see all  - use that module by import
+
+#-----------------------------------------------------------------------------------------
+#Classes & Objects - used to our code in organizing and powerful(create realworld model)
+# class Student:
+#     def __init__(self, name, major, gpa, is_on_probation):    #initialization function
+#         self.name = name
+#         self.major = major
+#         self.gpa = gpa
+#         self.is_on_probation = is_on_probation
+# #we create other file in class - from Student import Student
+# student1 = Student("vicky","BE",8,False)
+# student2 = Student("nakki","BE",7.5,True)
+# print(student1.name)
+# print(student2.gpa)
+
+#-------------------------------------------------------------------------------------------
+#Building a Multiple Choice Quiz
+
+# class Question:
+#     def __init__(self,question_prompt,answer):
+#         self.question_prompt = question_prompt
+#         self.answer = answer
+#
+# question_prompt = [
+#     "what is sky's colour?\na)red \nb)green \nc)blue \n\n",
+#     "what is the count of options?\na)3 \nb)5 \nc)8\n\n"
+# ]
+#
+# questions = [
+#     Question(question_prompt[0], "c"),
+#     Question(question_prompt[1], "a")
+# ]
+#
+# def run_test(questions):
+#     score = 0
+#     for q in questions:
+#         answer = input(q.question_prompt)
+#         if answer == q.answer:
+#             score += 1
+#         # else:
+#         #     print("wrong answer")
+#     print("you got "+ str(score) + "/" + str(len(questions))+ "correct")
+#
+# run_test(questions)
+
+#--------------------------------------------------------------------------------------
+#Object Functions
+# class Student:
+#     def __init__(self, name, major, gpa):  # initialization function
+#         self.name = name
+#         self.major = major
+#         self.gpa = gpa
+#
+#     def on_honor_roll(self):
+#         if self.gpa >= 8:
+#             return True
+#         else:
+#             return False
+#
+# student1 = Student("vicky","BE",8.8)
+# student2 = Student("nakki","BE",7.5)
+#
+# print(student1.on_honor_roll())
+# print(student2.on_honor_roll())
+
+#--------------------------------------------------------------------------------
+#Inheritance
+# class Chef:
+#     def make_chicken(self):
+#         print("chicken")
+#     def make_mutton(self):
+#         print("mutton")
+#     def special(self):
+#         print("special is pizza")
+#
+# class Indianchef(Chef):   #inherit other class
+#     def special(self):            #override
+#         print("special is kothu parotta")
+#     def indian_dish(self):
+#         print("indian dish")
+#
+# mychef = Chef()
+# mychef.special()
+# indianchef = Indianchef()
+# indianchef.special()
+
+#--------------------------------------------------------------------------------------
+#Python Interpreter
