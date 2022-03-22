@@ -1,0 +1,8 @@
+num_list = []
+n = int(input("enter size : "))
+for i in range(0, n):
+    item = int(input())
+    num_list.append(item)
+    mylist = list(dict.fromkeys(num_list))
+    # mylist.sort()
+print(mylist)
