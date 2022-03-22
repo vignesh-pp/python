@@ -1,0 +1,7 @@
+n = int(input())
+for i in range(1, 11):
+    print(i,end='')
+    print("x",end='')
+    print(n,end='')
+    print("=",end='')
+    print(i*n)
