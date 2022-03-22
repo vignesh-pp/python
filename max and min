@@ -1,0 +1,21 @@
+#without max fun add numbers
+numbers = []
+n = int(input("enter numbers: "))
+for i in range(0, n):
+    items = int(input())
+    numbers.append(items)
+
+great = numbers[0]
+for i in range(0, n):
+    if numbers[i] > great:
+        great = numbers[i]
+print(great)
+
+#with max fun
+numbers = []
+n = int(input("enter size: "))
+for i in range(0, n):
+    items = int(input())
+    numbers.append(items)
+print(max(numbers))
+print(min(numbers))
