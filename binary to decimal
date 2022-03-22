@@ -1,0 +1,9 @@
+n = int(input("input in binary: "))
+s = 0
+b = 1
+while n > 0:
+    r = n % 10
+    s = s + r * b
+    n //= 10
+    b = b * 2
+print(s)
