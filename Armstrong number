@@ -1,0 +1,27 @@
+n = int(input())
+s = 0
+t = n
+
+while n > 0:
+    r = n % 10
+    s = s + (r * r * r)
+    n //= 10                        # //
+    # print(n)
+if s == t:
+    print(" is armstrong number")
+else:
+    print(" is not armstrong number")
+    
+    
+ //upto n numbers
+ 
+ e = int(input())
+for i in range(2, e+1):
+    t = i
+    s = 0
+    while t > 0:
+        r = t % 10
+        s = s+(r*r*r)
+        t //= 10
+    if s == i:
+        print(i)
