@@ -1,0 +1,8 @@
+str1 = input()
+str2 = input()
+if len(str1) != len(str2):
+    print("not an anagram")
+if sorted(str1) == sorted(str2):
+    print("anagram")
+else:
+    print("not an anagram")
