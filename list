@@ -1,0 +1,6 @@
+num_list = []
+n = int(input("enter size : "))
+for i in range(0,n):
+    item = int(input())
+    num_list.append(item)
+print("the list is ",num_list)
