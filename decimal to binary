@@ -1,0 +1,9 @@
+i = 1
+bi = 0
+n = int(input("emter digit : "))
+while (n != 0):
+    rem = n % 2
+    bi=bi+rem * i
+    n //= 2
+    i=i * 10
+print(bi)
