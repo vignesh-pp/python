@@ -1,0 +1,8 @@
+num_list = []
+n = int(input())
+for i in range(0,n):
+    item = int(input())
+    num_list.append(item)
+    res = sorted(num_list,reverse=True)
+    ans = list(dict.fromkeys(res))
+print(ans[1])
