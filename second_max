@@ -6,3 +6,9 @@ for i in range(0,n):
     res = sorted(num_list,reverse=True)
     ans = list(dict.fromkeys(res))
 print(ans[1])
+
+
+#other
+n = int(input())
+arr = map(int, input().split())
+print(sorted(list(dict.fromkeys(arr)))[-2])
